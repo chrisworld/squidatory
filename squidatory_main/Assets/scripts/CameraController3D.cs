@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraController3D : MonoBehaviour {
 
-	// source: https://www.youtube.com/watch?v=JdjAm8wBx4o
+	// source: https://stackoverflow.com/a/47904587
 
 	public GameObject player_;
 	public float cameraDist_ = 7.0f;
@@ -12,7 +12,7 @@ public class CameraController3D : MonoBehaviour {
 	void Start () {
 		
 	}
-
+		
 	void LateUpdate () {
 		transform.position = player_.transform.position - player_.transform.forward * cameraDist_;
 		transform.LookAt (player_.transform.position);

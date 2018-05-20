@@ -42,7 +42,8 @@ public class SoundManager : MonoBehaviour {
 
   // play sounds at the start of the game
   void Start (){
-    Play("jump"); 
+    //Play("jump"); 
+    Play("walking"); 
   }
 
   // Update is called once per frame

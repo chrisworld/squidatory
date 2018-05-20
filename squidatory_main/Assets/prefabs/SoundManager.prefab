@@ -58,3 +58,15 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: coin
+    clip: {fileID: 8300000, guid: 4c805588974805144b7b637e23971277, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: walking
+    clip: {fileID: 8300000, guid: de29814bd3a7ae642a0d576ef3399a34, type: 3}
+    volume: 0.4
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}

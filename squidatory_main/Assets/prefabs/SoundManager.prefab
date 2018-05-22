@@ -70,3 +70,9 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
+  - name: cube_theme
+    clip: {fileID: 8300000, guid: cbbf26e0b0601ab498c69232169b9087, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}

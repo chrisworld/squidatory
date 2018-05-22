@@ -43,7 +43,8 @@ public class SoundManager : MonoBehaviour {
   // play sounds at the start of the game
   void Start (){
     //Play("jump"); 
-    Play("walking"); 
+    //Play("walking"); 
+    Play("cube_theme"); 
   }
 
   // Update is called once per frame

@@ -5,6 +5,9 @@ squidatory_main/[Bb]uild/
 squidatory_main/[Bb]uilds/
 squidatory_main/Assets/AssetStoreTools*
 
+# other unnecessary files
+*.mscz,
+
 # project last opened unity version
 squidatory_main/ProjectSettings/ProjectVersion.txt
 

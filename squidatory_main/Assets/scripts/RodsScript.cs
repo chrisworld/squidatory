@@ -39,7 +39,6 @@ public class RodsScript : MonoBehaviour {
 	}
 
 	void OnGUI () {
-		Debug.Log ("Here");
 		if (showMenu) {
 			if (GUI.Button (new Rect (10,10,75,50), "Push")) {
 				pushed++;

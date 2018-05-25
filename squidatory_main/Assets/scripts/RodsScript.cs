@@ -9,23 +9,21 @@ public class RodsScript : MonoBehaviour {
 	int pushed = 0;
 	int pulled = 0;
 
-	void Start() {
-		
-	}
+	Collision current_c;
 
 	void OnCollisionEnter (Collision c) {
 		if (c.gameObject.tag == "Rod") {
+			current_c = c;
 			showMenu = true;
-			Debug.Log (showMenu);
 		}
 	}
 
 	void OnCollisionExit (Collision c) {
 		if (c.gameObject.tag == "Rod") {
+			current_c = c;
 			showMenu = false;
 			if (decision) {
 				decision = false;
-				Destroy (c.gameObject);
 			}
 		}
 
@@ -40,16 +38,21 @@ public class RodsScript : MonoBehaviour {
 		}
 	}
 
-	void OnGui () {
+	void OnGUI () {
 		Debug.Log ("Here");
 		if (showMenu) {
-			if (GUI.Button (new Rect (10,10,150,100), "Push")) {
+			if (GUI.Button (new Rect (10,10,75,50), "Push")) {
 				pushed++;
+				decision = true;
+				showMenu = false;
+				Destroy (current_c.gameObject);
 			}
-			else if (GUI.Button (new Rect (10,10,150,100), "Pull")) {
+			else if (GUI.Button (new Rect (90,10,75,50), "Pull")) {
 				pulled++;
+				decision = true;
+				showMenu = false;
+				Destroy (current_c.gameObject);
 			}
-			decision = true;
 		}
 	}
 }

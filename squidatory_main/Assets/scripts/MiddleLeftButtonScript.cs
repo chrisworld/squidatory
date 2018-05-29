@@ -2,35 +2,35 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FarLeftButtonScript : MonoBehaviour {
+public class MiddleLeftButtonScript : MonoBehaviour {
 
 
 	//Variable for far left symbol
-	public int symbolFL = 0;
+	public int symbolML = 0;
 
 	//Trigered when player steps on button
 	void OnTriggerEnter (Collider other){
 		 
 		//Change to next symbol
-		if (symbolFL == 4) {
-			symbolFL = 1;
+		if (symbolML == 4) {
+			symbolML = 1;
 		} else {
-			symbolFL++;
+			symbolML++;
 		}
 
 		//Run function on symbol display gameobject script to match selected symbol
-		switch (symbolFL) {
+		switch (symbolML) {
 		case 1:
-			GameObject.Find ("SymbolDisplayFL").GetComponent<SymbolChangeScript> ().changeToOne ();
+			GameObject.Find ("SymbolDisplayML").GetComponent<SymbolChangeScript> ().changeToOne ();
 			break;
 		case 2:
-			GameObject.Find ("SymbolDisplayFL").GetComponent<SymbolChangeScript> ().changeToTwo ();
+			GameObject.Find ("SymbolDisplayML").GetComponent<SymbolChangeScript> ().changeToTwo ();
 			break;
 		case 3:
-			GameObject.Find ("SymbolDisplayFL").GetComponent<SymbolChangeScript> ().changeToThree ();
+			GameObject.Find ("SymbolDisplayML").GetComponent<SymbolChangeScript> ().changeToThree ();
 			break;
 		case 4:
-			GameObject.Find ("SymbolDisplayFL").GetComponent<SymbolChangeScript> ().changeToFour ();
+			GameObject.Find ("SymbolDisplayML").GetComponent<SymbolChangeScript> ().changeToFour ();
 			break;
 
 		}

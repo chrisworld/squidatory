@@ -6,10 +6,10 @@ public class MazeScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		//int completedLvls = GameManager.instance_.getFLvlCount ();
+		int completedLvls = GameManager.instance_.getFLvlCount ();
 
 		// For testing purposes:
-		 int completedLvls = 5;
+		//int completedLvls = 5;
 
 		for (int i = 1; i <= completedLvls; i++) {
 			string door = "MazeDoor" + i.ToString ();

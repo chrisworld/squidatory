@@ -15,8 +15,12 @@ public class MerchantColliderScript : MonoBehaviour {
 		var CoinCount = GameObject.Find ("ThirdPersonController").GetComponent<CoinCountScript>();
 		var coins = CoinCount.coins;
 
+		Text txt = GameObject.Find ("DialogueText").GetComponent<Text>(); 
+		txt.text = "Hey, I am selling music! Would you like to buy some music for the low price of 5 coins?";
+
+		//Set text in dialogue box 
 		if (coins < 5) {
-			Debug.Log ("You need more coins");
+			
 		} else {
 			Debug.Log ("Great!");
 		}

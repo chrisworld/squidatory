@@ -54,19 +54,19 @@ MonoBehaviour:
   sounds:
   - name: jump
     clip: {fileID: 8300000, guid: 53f5871cfc45001489452b772ea5c057, type: 3}
-    volume: 1
+    volume: 0.5
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: coin
     clip: {fileID: 8300000, guid: 4c805588974805144b7b637e23971277, type: 3}
-    volume: 1
+    volume: 0.5
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: walking
     clip: {fileID: 8300000, guid: de29814bd3a7ae642a0d576ef3399a34, type: 3}
-    volume: 0.4
+    volume: 0.314
     pitch: 1
     loop: 1
     source: {fileID: 0}
@@ -74,5 +74,11 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: cbbf26e0b0601ab498c69232169b9087, type: 3}
     volume: 1
     pitch: 1
-    loop: 0
+    loop: 1
+    source: {fileID: 0}
+  - name: squid_theme
+    clip: {fileID: 8300000, guid: a1dda5c6661f5da42a81849f6d46f831, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
     source: {fileID: 0}

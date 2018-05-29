@@ -10,18 +10,24 @@ public class FloorButtonScript : MonoBehaviour {
 	//Trigered when player steps on button
 	void OnTriggerEnter (Collider other){
 		//Moves button game object down
+		this.transform.position += Vector3.down * 0.05F;
 
-		if (test == 4){
-			test = 1;
+		//Change to next symbol
+		if (symbol == 4){
+			symbol = 1;
 		} else {
-			test++;
+			symbol++;
 		}
-		Debug.Log ("Test is: " + test);
+
+		Debug.Log ("Test is: " + symbol);
 	}
 
 	//Trigered when player steps off button
 	void OnTriggerExit (Collider other){
-		
+		//Moves button game object up 
+		//Moves button game object down
+		this.transform.position += Vector3.up * 0.05F;
+
 		Debug.Log ("Object has exited");
 	}
 

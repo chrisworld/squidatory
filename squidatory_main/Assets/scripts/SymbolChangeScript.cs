@@ -3,34 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SymbolChangeScript : MonoBehaviour {
-
+	//Functions to change material of symbol screen to match current symbol
 	public void changeToOne (){
-		Debug.Log ("It worked!");
-		GetComponent<Renderer>().material.color = Color.black;
+		GetComponent<Renderer>().material.color = Color.black; //STILL TO DO - Change this value to new symbol
 	}
 
 	public void changeToTwo (){
-		Debug.Log ("It worked!");
-		GetComponent<Renderer>().material.color = Color.red;
+		GetComponent<Renderer>().material.color = Color.red; //STILL TO DO - Change this value to new symbol
 	}
 
 	public void changeToThree (){
-		Debug.Log ("It worked!");
-		GetComponent<Renderer>().material.color = Color.blue;
+		GetComponent<Renderer>().material.color = Color.blue; //STILL TO DO - Change this value to new symbol
 	}
 
 	public void changeToFour (){
-		Debug.Log ("It worked!");
-		GetComponent<Renderer>().material.color = Color.yellow;
+		GetComponent<Renderer>().material.color = Color.yellow; //STILL TO DO - Change this value to new symbol
 	}
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }

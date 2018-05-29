@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FloorButtonScript : MonoBehaviour {
+public class FarLeftButtonScript : MonoBehaviour {
 
-	//Variable for symbol type
+
+	//Variable for far left symbol
 	public int symbolFL = 0;
 
 	//Trigered when player steps on button
 	void OnTriggerEnter (Collider other){
-		//Moves button game object down
-		this.transform.position += Vector3.down * 0.05F;
 
 		//Change to next symbol
 		if (symbolFL == 4) {
@@ -35,16 +34,7 @@ public class FloorButtonScript : MonoBehaviour {
 			break;
 
 		}
-
 	}
-
-	//Trigered when player steps off button
-	void OnTriggerExit (Collider other){
-		//Moves button game object up 
-		//Moves button game object down
-		this.transform.position += Vector3.up * 0.05F;
-	}
-
 
 	// Use this for initialization
 	void Start () {

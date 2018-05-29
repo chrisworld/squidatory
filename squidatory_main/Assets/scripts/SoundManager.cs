@@ -3,12 +3,12 @@ Adapted from "Brackeys" @ https://youtu.be/6OT43pvUyfY
 Usage of Sound Manager:
 Add and set sounds in SoundManager
 Play a Sound with:
-FindObjectOfType<SoundManager().Play("nameOfSound")>;
+FindObjectOfType<SoundManager>().Play("nameOfSound");
 */
 
-using UnityEngine.Audio;
 using System;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class SoundManager : MonoBehaviour {
 
@@ -44,7 +44,8 @@ public class SoundManager : MonoBehaviour {
   void Start (){
     //Play("jump"); 
     //Play("walking"); 
-    Play("cube_theme"); 
+    //Play("cube_theme"); 
+    Play("squid_theme"); 
   }
 
   // Update is called once per frame
@@ -53,12 +54,22 @@ public class SoundManager : MonoBehaviour {
   }
 
   // play specific Sound
-  void Play (string name){
+  public void Play (string name){
     Sound s = Array.Find(sounds, sound => sound.name == name);
     if (s == null){
       Debug.LogWarning("Sound: " + name + " not found! -> check SoundManager");
       return;
     }
     s.source.Play();
+  }
+
+    // stop specific Sound
+  public void Stop (string name){
+    Sound s = Array.Find(sounds, sound => sound.name == name);
+    if (s == null){
+      Debug.LogWarning("Sound: " + name + " not found! -> check SoundManager");
+      return;
+    }
+    s.source.Stop();
   }
 }

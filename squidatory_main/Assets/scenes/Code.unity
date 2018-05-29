@@ -363,6 +363,7 @@ GameObject:
   - component: {fileID: 1958507579}
   - component: {fileID: 1958507578}
   - component: {fileID: 1958507577}
+  - component: {fileID: 1958507581}
   m_Layer: 0
   m_Name: SymbolDisplay
   m_TagString: Untagged
@@ -434,6 +435,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1958507581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1958507576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3416e7bbb31404b12b9aefaad5904b0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2125881066
 GameObject:
   m_ObjectHideFlags: 0

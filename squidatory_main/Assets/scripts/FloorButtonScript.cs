@@ -19,6 +19,23 @@ public class FloorButtonScript : MonoBehaviour {
 			symbol++;
 		}
 
+		switch (symbol) {
+		case 1:
+			GameObject.Find ("SymbolDisplay").GetComponent<SymbolChangeScript> ().changeToOne ();
+			break;
+		case 2:
+			GameObject.Find ("SymbolDisplay").GetComponent<SymbolChangeScript> ().changeToTwo ();
+			break;
+		case 3:
+			GameObject.Find ("SymbolDisplay").GetComponent<SymbolChangeScript> ().changeToThree ();
+			break;
+		case 4:
+			GameObject.Find ("SymbolDisplay").GetComponent<SymbolChangeScript> ().changeToFour ();
+			break;
+		}
+
+
+
 		Debug.Log ("Test is: " + symbol);
 	}
 

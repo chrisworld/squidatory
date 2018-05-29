@@ -20,6 +20,7 @@ public class CoinScript : MonoBehaviour {
 		if (other.name == "ThirdPersonController") {
 			Destroy (gameObject); //Remove coin game object from scene
 			other.GetComponent<CoinCountScript>().coins++; //Increment coin variable in coin count script
+			FindObjectOfType<SoundManager>().Play("coin");
 		}
 	}
 }

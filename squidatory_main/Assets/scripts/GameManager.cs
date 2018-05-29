@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour {
 
 	// list of finished levels
 	public ArrayList fLvls_;
+	public int goodKarma_;
+	public int badKarma_;
 
 	// Use this for initialization
 	void Start () {

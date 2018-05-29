@@ -43,3 +43,4 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+squidatory_main/UnityPackageManager/manifest.json

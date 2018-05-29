@@ -29,9 +29,9 @@ public class RodsScript : MonoBehaviour {
 
 		if (pushed + pulled == 3) {
 			if (pushed > pulled) {
-				// game manager good cube + 1
+				GameManager.instance_.badKarma_++;
 			} else {
-				// game manager bad cube + 1
+				GameManager.instance_.goodKarma_++;
 			}
 
 			GameManager.instance_.fLevel ("Rods");

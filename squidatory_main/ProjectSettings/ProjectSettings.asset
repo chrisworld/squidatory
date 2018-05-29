@@ -599,7 +599,7 @@ PlayerSettings:
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
   cloudProjectId: df5a4ad3-5b32-404f-81f6-2bfef007688c
-  projectName: Platforms
+  projectName: Squidatory
   organizationId: craig19
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0

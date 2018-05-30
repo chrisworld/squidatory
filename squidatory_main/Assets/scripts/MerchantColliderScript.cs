@@ -15,8 +15,17 @@ public class MerchantColliderScript : MonoBehaviour {
 		var CoinCount = GameObject.Find ("ThirdPersonController").GetComponent<CoinCountScript>();
 		var coins = CoinCount.coins;
 
-		Text txt = GameObject.Find ("DialogueText").GetComponent<Text>(); 
-		txt.text = "Hey, I am selling music! Would you like to buy some music for the low price of 5 coins?";
+		//Set text for dialouge value
+		Text dialogueTxt = GameObject.Find ("DialogueText").GetComponent<Text>(); 
+		dialogueTxt.text = "Hey, I am selling music! Would you like to buy some music for the low price of 5 coins?";
+
+		//Set text for Button A value
+		Text buttonATxt = GameObject.Find ("ButtonAText").GetComponent<Text>(); 
+		buttonATxt.text = "Sure!";
+		//Set text for Button A value
+		Text buttonBTxt = GameObject.Find ("ButtonBText").GetComponent<Text>(); 
+		buttonBTxt.text = "No thanks";
+
 
 		//Set text in dialogue box 
 		if (coins < 5) {

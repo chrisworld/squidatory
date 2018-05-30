@@ -82,3 +82,9 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
+  - name: button
+    clip: {fileID: 8300000, guid: 8f5200fbb66fb4e42bb80ebbefdb4c6e, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}

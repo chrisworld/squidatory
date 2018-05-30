@@ -25,7 +25,7 @@ public class AcceptMerchantScript : MonoBehaviour {
 			//Player has enough coins
 			//Set text for dialouge value
 			Text dialogueTxt = GameObject.Find ("DialogueText").GetComponent<Text>(); 
-			dialogueTxt.text = "Great. Here's your music. Also take this bad karma box.";
+			dialogueTxt.text = "Great. Here's your music. Press the M key to hear it. Also take this karma box.";
 
 			//Add script to add bad karma box here
 		}

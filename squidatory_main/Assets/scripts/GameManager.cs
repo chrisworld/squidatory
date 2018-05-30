@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour {
 
 		DontDestroyOnLoad (gameObject);
 
-		StartGame ();
+		//StartGame ();
 	}
 
 	// Update is called once per frame

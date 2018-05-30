@@ -27,6 +27,8 @@ public class AcceptMerchantScript : MonoBehaviour {
 			Text dialogueTxt = GameObject.Find ("DialogueText").GetComponent<Text>(); 
 			dialogueTxt.text = "Great. Here's your music. Press the M key to hear it. Also take this karma box.";
 
+			FindObjectOfType<SoundManager> ().setBadass ();
+
 			//Add script to add bad karma box here
 		}
 

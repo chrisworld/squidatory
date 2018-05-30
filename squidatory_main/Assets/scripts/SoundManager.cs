@@ -51,7 +51,7 @@ public class SoundManager : MonoBehaviour {
     //Play("cube_theme"); 
     //Play("squid_theme"); 
     //Play("button"); 
-    badass_activated = true;
+    badass_activated = false;
     badass_music_on = false;
   }
 

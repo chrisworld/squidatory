@@ -8,6 +8,7 @@ TagManager:
   - Rod
   - BlackCube
   - WhiteCube
+  - MovingPlatform
   layers:
   - Default
   - TransparentFX

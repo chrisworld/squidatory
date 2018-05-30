@@ -15,6 +15,5 @@ public class MerchantCanvasScript : MonoBehaviour {
 	void Update () {
 		var test = GameObject.Find ("ThirdPersonController").GetComponent<CoinCountScript>();
 		var coins = test.coins;
-		Debug.Log ("coins is: " + coins);
 	}
 }

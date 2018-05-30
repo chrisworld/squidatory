@@ -423,7 +423,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fccb3709b61342afb1ff99794e07898, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  symbolFL: 0
+  symbolFR: 0
 --- !u!1 &919229447 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1025763207907798, guid: c6922aad3579042b5ae24d2d25b53321,
@@ -440,7 +440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca3e02bd726a84e0d934d8a6d4c3bba0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  symbolFL: 0
+  symbolML: 0
 --- !u!1 &924621867
 GameObject:
   m_ObjectHideFlags: 0
@@ -551,7 +551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 015e2a5c943d3479cad6d49776627164, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  symbolFL: 0
+  symbolMR: 0
 --- !u!1 &1607264293
 GameObject:
   m_ObjectHideFlags: 0
@@ -949,6 +949,7 @@ GameObject:
   - component: {fileID: 2125881069}
   - component: {fileID: 2125881068}
   - component: {fileID: 2125881067}
+  - component: {fileID: 2125881071}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -1022,3 +1023,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2125881071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2125881066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59967b5328fc74f399901f102420afb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goodKarma_: 0
+  badKarma_: 0

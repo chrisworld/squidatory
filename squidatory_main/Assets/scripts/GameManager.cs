@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
@@ -24,6 +25,10 @@ public class GameManager : MonoBehaviour {
 		} else if (instance_ != this) {
 			DestroyObject (gameObject);
 		}
+
+		DontDestroyOnLoad (gameObject);
+
+		StartGame ();
 	}
 
 	// Update is called once per frame
@@ -51,5 +56,9 @@ public class GameManager : MonoBehaviour {
 	// get finished level count
 	public int getFLvlCount() {
 		return fLvls_.Count;
+	}
+
+	void StartGame() {
+		SceneManager.LoadScene ("Squid_Menu");
 	}
 }

@@ -11,9 +11,9 @@ public class AcceptMerchantScript : MonoBehaviour {
 		var CoinCount = GameObject.Find ("ThirdPersonController").GetComponent<CoinCountScript>();
 		var coins = CoinCount.coins;
 
-		//Disable buttons A & B
-		//GameObject.Find ("ButtonA").SetActive(false); 
-		//GameObject.Find ("ButtonB").SetActive(false);
+		//Move buttons A&B off screen (fix for SetActive = false error)
+		GameObject.Find ("ButtonA").transform.Translate(0, -2000, 0);
+		GameObject.Find ("ButtonB").transform.Translate(0, -2000, 0);
 
 		//Check players number of coins is 5
 		if (coins < 5) {
@@ -26,10 +26,6 @@ public class AcceptMerchantScript : MonoBehaviour {
 			//Set text for dialouge value
 			Text dialogueTxt = GameObject.Find ("DialogueText").GetComponent<Text>(); 
 			dialogueTxt.text = "Great. Here's your music. Also take this bad karma box.";
-
-
-			//Disable box collider 
-			//GameObject.Find ("MerchantBoxCollider").SetActive(false);
 
 			//Add script to add bad karma box here
 		}

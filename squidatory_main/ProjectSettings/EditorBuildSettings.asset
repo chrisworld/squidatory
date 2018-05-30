@@ -4,4 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/scenes/Squid_Menu.unity
+    guid: f3914b57a6e8e9146beec78541e9f54b
+  - enabled: 1
+    path: Assets/Game Menu/Scenes/help.unity
+    guid: 42c8f20763d387a41b3c705e36f37b2d
+  - enabled: 1
+    path: Assets/Game Menu/Scenes/credits.unity
+    guid: 2025c8433a4d16147b59239d741dcfa9
+  - enabled: 1
+    path: Assets/Game Menu/Scenes/audio.unity
+    guid: f62fe64c4d2b32447a9fb0ef3bdca7f3
+  m_configObjects: {}

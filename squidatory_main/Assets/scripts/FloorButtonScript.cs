@@ -9,7 +9,7 @@ public class FloorButtonScript : MonoBehaviour {
 		//Moves button game object down
 		this.transform.position += Vector3.down * 0.05F;
 
-		//Play button sound
+		//Play button sound	
 		FindObjectOfType<SoundManager>().Play("button");
 
 	}

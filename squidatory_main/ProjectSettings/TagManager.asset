@@ -8,7 +8,9 @@ TagManager:
   - Rod
   - BlackCube
   - WhiteCube
-  - MovingPlatform
+  - Coin
+  - ButtonA
+  - ButtonB
   layers:
   - Default
   - TransparentFX

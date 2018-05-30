@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 101081969}
   m_Layer: 5
   m_Name: ButtonB
-  m_TagString: Untagged
+  m_TagString: ButtonB
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,7 +144,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 230, y: -130}
+  m_AnchoredPosition: {x: 230, y: -180}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &101081969
@@ -159,7 +159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -186,7 +186,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 583120616}
+      - m_Target: {fileID: 1926386248}
         m_MethodName: DeclineMerchant
         m_Mode: 1
         m_Arguments:
@@ -274,6 +274,10 @@ Prefab:
     - target: {fileID: 1802547671709130, guid: eae877775e3c94846a3e6154df823c67, type: 2}
       propertyPath: m_Name
       value: Coin (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1802547671709130, guid: eae877775e3c94846a3e6154df823c67, type: 2}
+      propertyPath: m_TagString
+      value: Coin
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eae877775e3c94846a3e6154df823c67, type: 2}
@@ -446,7 +450,6 @@ GameObject:
   - component: {fileID: 583120612}
   - component: {fileID: 583120611}
   - component: {fileID: 583120615}
-  - component: {fileID: 583120616}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -539,17 +542,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 927fa11dfb5d4446fb8d395b2368515f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &583120616
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 583120610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bdb60b3f13314707a8c3bede64b7d7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &721582446
@@ -848,6 +840,10 @@ Prefab:
       propertyPath: m_Name
       value: Coin (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1802547671709130, guid: eae877775e3c94846a3e6154df823c67, type: 2}
+      propertyPath: m_TagString
+      value: Coin
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eae877775e3c94846a3e6154df823c67, type: 2}
   m_IsPrefabParent: 0
@@ -864,7 +860,7 @@ GameObject:
   - component: {fileID: 1060298619}
   m_Layer: 5
   m_Name: ButtonA
-  m_TagString: Untagged
+  m_TagString: ButtonA
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -885,7 +881,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -230, y: -130}
+  m_AnchoredPosition: {x: -230, y: -180}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1060298619
@@ -900,7 +896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -926,7 +922,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1060298620}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1926386249}
+        m_MethodName: AcceptMerchant
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1060298620
@@ -1184,7 +1191,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 14, y: 180}
+  m_AnchoredPosition: {x: 14, y: 144}
   m_SizeDelta: {x: 800, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1244657369
@@ -1630,6 +1637,10 @@ Prefab:
       propertyPath: m_Name
       value: Coin (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1802547671709130, guid: eae877775e3c94846a3e6154df823c67, type: 2}
+      propertyPath: m_TagString
+      value: Coin
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eae877775e3c94846a3e6154df823c67, type: 2}
   m_IsPrefabParent: 0
@@ -1801,6 +1812,10 @@ Prefab:
     - target: {fileID: 1802547671709130, guid: eae877775e3c94846a3e6154df823c67, type: 2}
       propertyPath: m_Name
       value: Coin (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1802547671709130, guid: eae877775e3c94846a3e6154df823c67, type: 2}
+      propertyPath: m_TagString
+      value: Coin
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eae877775e3c94846a3e6154df823c67, type: 2}
@@ -1981,6 +1996,8 @@ GameObject:
   - component: {fileID: 1926386245}
   - component: {fileID: 1926386247}
   - component: {fileID: 1926386246}
+  - component: {fileID: 1926386248}
+  - component: {fileID: 1926386249}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -2042,6 +2059,28 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1926386244}
+--- !u!114 &1926386248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1926386244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bdb60b3f13314707a8c3bede64b7d7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1926386249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1926386244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e16a09c850a6d4aa4983709c194a5625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1932114633
 GameObject:
   m_ObjectHideFlags: 0
@@ -5629,6 +5668,10 @@ Prefab:
     - target: {fileID: 4904695537958686, guid: eae877775e3c94846a3e6154df823c67, type: 2}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1802547671709130, guid: eae877775e3c94846a3e6154df823c67, type: 2}
+      propertyPath: m_TagString
+      value: Coin
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eae877775e3c94846a3e6154df823c67, type: 2}

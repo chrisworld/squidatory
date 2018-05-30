@@ -10,10 +10,5 @@ public class MerchantCanvasScript : MonoBehaviour {
 		//Hide canvas on inital load
 		this.gameObject.SetActive(false);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		var test = GameObject.Find ("ThirdPersonController").GetComponent<CoinCountScript>();
-		var coins = test.coins;
-	}
+		
 }

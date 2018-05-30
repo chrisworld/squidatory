@@ -11,10 +11,6 @@ public class MerchantColliderScript : MonoBehaviour {
 		//Show canvas when player enters collider
 		canvas.SetActive(true);
 
-		//Get number of coins collected value
-		var CoinCount = GameObject.Find ("ThirdPersonController").GetComponent<CoinCountScript>();
-		var coins = CoinCount.coins;
-
 		//Set text for dialouge value
 		Text dialogueTxt = GameObject.Find ("DialogueText").GetComponent<Text>(); 
 		dialogueTxt.text = "Hey, I am selling music! Would you like to buy some music for the low price of 5 coins?";
@@ -22,18 +18,13 @@ public class MerchantColliderScript : MonoBehaviour {
 		//Set text for Button A value
 		Text buttonATxt = GameObject.Find ("ButtonAText").GetComponent<Text>(); 
 		buttonATxt.text = "Sure!";
-		//Set text for Button A value
+		//Set text for Button B value
 		Text buttonBTxt = GameObject.Find ("ButtonBText").GetComponent<Text>(); 
-		buttonBTxt.text = "No thanks";
+		buttonBTxt.text = "No thanks"; 
 
-
-		//Set text in dialogue box 
-		if (coins < 5) {
-			
-		} else {
-			Debug.Log ("Great!");
-		}
-	
+		//Move buttons A&B on screen (fix for SetActive = false error)
+		GameObject.Find ("ButtonA").transform.position = new Vector3 (376, 131);
+		GameObject.Find ("ButtonB").transform.position = new Vector3 (514, 131);
 	}
 		
 	void OnTriggerExit (){
@@ -42,13 +33,4 @@ public class MerchantColliderScript : MonoBehaviour {
 	}
 
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }

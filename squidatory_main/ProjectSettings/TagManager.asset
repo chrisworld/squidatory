@@ -8,6 +8,9 @@ TagManager:
   - Rod
   - BlackCube
   - WhiteCube
+  - Coin
+  - ButtonA
+  - ButtonB
   layers:
   - Default
   - TransparentFX

@@ -13,6 +13,7 @@ TagManager:
   - ButtonA
   - Coin
   - Ground
+  - 2D_Box_Black2
   layers:
   - Default
   - TransparentFX

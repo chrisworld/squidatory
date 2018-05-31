@@ -4,11 +4,21 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GetGoodKarmaScript : MonoBehaviour {
-
+    
     private void OnCollisionEnter2D(Collision2D collision){
 
-            //Play sound
-            //FindObjectOfType<SoundManager>().Play("nameOfSound");
+        //Stop current music
+        try
+        {
+            FindObjectOfType<SoundManager>().Stop("cube_ambient");
+        }
+        catch
+        {
+            Debug.Log("Cube Amient sound not playing");
+        }
+
+             //Play sound
+             FindObjectOfType<SoundManager>().Play("white_cube");
 
             //Add to good karma variable
             //GameManager.instance_.goodKarma_++;
@@ -16,15 +26,6 @@ public class GetGoodKarmaScript : MonoBehaviour {
             //Remove good karma box
             Destroy(gameObject);
 
-            //Stop current music
-            try
-            {
-                 FindObjectOfType<SoundManager>().Stop("cube_ambient");
-            }
-            catch
-            {
-                Debug.Log("Cube Amient sound not playing");
-            }
             //Start Cube theme music
             FindObjectOfType<SoundManager>().Play("cube_theme");
 

@@ -32,13 +32,28 @@ public class FloorButtonScript : MonoBehaviour {
 		var correctMR = 3;
 		var correctFR = 4;
 
+
 		//Check if code has been entered correctly
 		if (playerFL == correctFL &&
 		    playerML == correctML &&
 		    playerMR == correctMR &&
 		    playerFR == correctFR) {
-			Debug.Log ("It worked!");
-			//Enter add good/bad box here 
+
+            //Check if user complted other level or just guessed the code
+            int completedLvls = GameManager.instance_.getFLvlCount();
+
+            Debug.Log(completedLvls);
+
+            // For testing purposes:
+            //int completedLvls = 2;
+
+            if (completedLvls >= 4){
+                //User completed other levels - add white cube
+                GameObject.Find("2D_Box_White2").transform.Translate(0, -21, 0);
+            } else {
+                //User guessed code - add black cube
+                GameObject.Find("2D_Box_Black2").transform.Translate(0, -21, 0);
+            }
 		}
 
 	}

@@ -29,7 +29,9 @@ public class AcceptMerchantScript : MonoBehaviour {
 
 			FindObjectOfType<SoundManager> ().setBadass ();
 
-			//Add script to add bad karma box here
+            //Add bad karma box
+            GameObject.Find("2D_Box_Black2").transform.Translate(-24, 0, 0);
+
 		}
 
 	}

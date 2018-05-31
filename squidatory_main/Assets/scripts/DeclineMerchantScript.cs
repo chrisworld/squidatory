@@ -18,8 +18,8 @@ public class DeclineMerchantScript : MonoBehaviour {
 		GameObject.Find ("ButtonA").transform.Translate(0, -2000, 0);
 		GameObject.Find ("ButtonB").transform.Translate(0, -2000, 0);
 
-		//Add script to add good karma box here
-
+        //Add good karma box
+        GameObject.Find("2D_Box_White2").transform.Translate(-24, 0, 0);
 
 	}
 		

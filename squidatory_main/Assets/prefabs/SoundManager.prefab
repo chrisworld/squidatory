@@ -106,5 +106,17 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: black_cube
+    clip: {fileID: 8300000, guid: 0073bae3d9339984989ceefdd18b0945, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: white_cube
+    clip: {fileID: 8300000, guid: 3dedecac64030a74bbd7944704272a03, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
   badass_activated: 0
   badass_music_on: 0

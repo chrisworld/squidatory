@@ -53,6 +53,7 @@ public class SoundManager : MonoBehaviour {
     //Play("button"); 
     badass_activated = false;
     badass_music_on = false;
+    //setMasterVolume(0.1f);
   }
 
   // Update is called once per frame
@@ -95,5 +96,11 @@ public class SoundManager : MonoBehaviour {
 
   public void setBadass(){
     badass_activated = true;
+  }
+
+  public void setMasterVolume(float percent){
+    foreach (Sound s in sounds){
+      s.source.volume = s.volume * percent;
+    }
   }
 }

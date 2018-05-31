@@ -48,14 +48,18 @@ public class SoundManager : MonoBehaviour {
   void Start (){
     //Play("jump"); 
     //Play("walking"); 
+<<<<<<< HEAD
     Play("cube_theme"); 
     //Play("cube_ambient"); 
     //Play("squid_theme"); 
     //Play("button"); 
+=======
+    //Play("cube_theme"); 
+    //Play("squid_theme"); 
+>>>>>>> 3af36c92130d500e696d94555936a121acd16a93
     //Play("button"); 
     badass_activated = false;
     badass_music_on = false;
-    //setMasterVolume(0.1f);
   }
 
   // Update is called once per frame
@@ -63,12 +67,12 @@ public class SoundManager : MonoBehaviour {
   	if (badass_activated){
       if (Input.GetKeyDown(KeyCode.M)){
         if (!badass_music_on){
-          Stop("squid_theme");
+          Stop("cube_theme");
           Play("badass");
           badass_music_on = true;
         }
         else {
-          Play("squid_theme");
+          Play("cube_theme");
           Stop("badass");
           badass_music_on = false;
         }
@@ -98,11 +102,5 @@ public class SoundManager : MonoBehaviour {
 
   public void setBadass(){
     badass_activated = true;
-  }
-
-  public void setMasterVolume(float percent){
-    foreach (Sound s in sounds){
-      s.source.volume = s.volume * percent;
-    }
   }
 }

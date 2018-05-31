@@ -94,6 +94,7 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
+<<<<<<< HEAD
   - name: squid_scream
     clip: {fileID: 8300000, guid: 87d29f41cefb98e4caa0f651dac873a5, type: 3}
     volume: 0.8
@@ -124,5 +125,7 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+=======
+>>>>>>> 3af36c92130d500e696d94555936a121acd16a93
   badass_activated: 0
   badass_music_on: 0

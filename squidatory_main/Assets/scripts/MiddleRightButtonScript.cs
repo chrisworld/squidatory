@@ -9,7 +9,7 @@ public class MiddleRightButtonScript : MonoBehaviour {
 	public int symbolMR = 0;
 
 	//Trigered when player steps on button
-	void OnTriggerEnter (Collider other){
+	void OnTriggerEnter2D (Collider2D other){
 		 
 		//Change to next symbol
 		if (symbolMR == 4) {

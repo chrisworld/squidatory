@@ -7,14 +7,14 @@ public class ShimmerScript : MonoBehaviour {
 
 	bool showText = false;
 
-	void OnCollisionEnter (Collision c) {
-		if (c.collider.name == "Character") {
+	void OnCollisionEnter2D (Collision2D c) {
+		if (c.collider.name == "BatMan") {
 			showText = true;
 		}
 	}
 
-	void OnCollisionExit (Collision c) {
-		if (c.collider.name == "Character") {
+	void OnCollisionExit2D (Collision2D c) {
+		if (c.collider.name == "BatMan") {
 			showText = false;
 		}
 	}

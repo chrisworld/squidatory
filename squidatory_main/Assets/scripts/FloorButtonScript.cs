@@ -5,7 +5,7 @@ using UnityEngine;
 public class FloorButtonScript : MonoBehaviour {
 
 	//Trigered when player steps on button
-	void OnTriggerEnter (Collider other){
+	void OnTriggerEnter2D (Collider2D other){
 		//Moves button game object down
 		this.transform.position += Vector3.down * 0.05F;
 
@@ -16,7 +16,7 @@ public class FloorButtonScript : MonoBehaviour {
 	}
 
 	//Trigered when player steps off button
-	void OnTriggerExit (Collider other){
+	void OnTriggerExit2D (Collider2D other){
 		//Moves button game object up 
 		this.transform.position += Vector3.up * 0.05F;
 

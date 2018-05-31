@@ -12,7 +12,7 @@ public class DeclineMerchantScript : MonoBehaviour {
 
 		//Set text for dialouge value
 		Text dialogueTxt = GameObject.Find ("DialogueText").GetComponent<Text>(); 
-		dialogueTxt.text = "Okay. Well here is a good karama box.";
+		dialogueTxt.text = "Okay. Well here is your prize.";
 
 		//Move buttons A&B off screen (fix for SetActive = false error)
 		GameObject.Find ("ButtonA").transform.Translate(0, -2000, 0);

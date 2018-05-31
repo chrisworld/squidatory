@@ -7,7 +7,7 @@ public class MerchantColliderScript : MonoBehaviour {
 
 	public GameObject canvas;
 
-	void OnTriggerEnter (){
+	void OnTriggerEnter2D (){
 		//Show canvas when player enters collider
 		canvas.SetActive(true);
 
@@ -27,7 +27,7 @@ public class MerchantColliderScript : MonoBehaviour {
 		GameObject.Find ("ButtonB").transform.position = new Vector3 (514, 131);
 	}
 		
-	void OnTriggerExit (){
+	void OnTriggerExit2D (){
 		//Hide canvas when player enters collider
 		canvas.SetActive(false);
 	}

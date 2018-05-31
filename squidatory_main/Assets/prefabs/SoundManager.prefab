@@ -118,5 +118,11 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: cube_ambient
+    clip: {fileID: 8300000, guid: 8f3f409cd6bf95348afaf63103f0cf33, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
   badass_activated: 0
   badass_music_on: 0

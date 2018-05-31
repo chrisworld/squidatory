@@ -19,7 +19,7 @@ public class OuterDoorScript : MonoBehaviour {
         }
         if (door == "Level3Plane")
         {
-            SceneManager.LoadScene("Moving Platforms");
+            SceneManager.LoadScene("Code");
         }
         if (door == "Level4Plane")
         {
@@ -27,7 +27,7 @@ public class OuterDoorScript : MonoBehaviour {
         }
         if (door == "Level5Plane")
         {
-            SceneManager.LoadScene("Code");
+            SceneManager.LoadScene("Moving Platforms");
         }
         if (door == "Level6Plane")
         {

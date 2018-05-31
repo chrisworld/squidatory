@@ -12,18 +12,13 @@ public class GameManager : MonoBehaviour {
 	public int goodKarma_ = 0;
 	public int badKarma_ = 0;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-
 	void Awake () {
 		fLvls_ = new ArrayList ();
 
 		if (instance_ == null) {
 			instance_ = this;
 		} else if (instance_ != this) {
-			DestroyObject (gameObject);
+			Destroy (gameObject);
 		}
 
 		DontDestroyOnLoad (gameObject);

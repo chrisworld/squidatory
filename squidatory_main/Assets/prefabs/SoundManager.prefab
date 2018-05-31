@@ -66,13 +66,13 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: walking
     clip: {fileID: 8300000, guid: de29814bd3a7ae642a0d576ef3399a34, type: 3}
-    volume: 0.314
+    volume: 0.3
     pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: cube_theme
     clip: {fileID: 8300000, guid: 11b5493684539264f89e3b396ee2e7a3, type: 3}
-    volume: 1
+    volume: 0.5
     pitch: 1
     loop: 1
     source: {fileID: 0}
@@ -93,6 +93,48 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     loop: 1
+    source: {fileID: 0}
+  - name: squid_scream
+    clip: {fileID: 8300000, guid: 87d29f41cefb98e4caa0f651dac873a5, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: squid_happy
+    clip: {fileID: 8300000, guid: 04804e7c3900f654aaf23d22d943416c, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: black_cube
+    clip: {fileID: 8300000, guid: 0073bae3d9339984989ceefdd18b0945, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: white_cube
+    clip: {fileID: 8300000, guid: 3dedecac64030a74bbd7944704272a03, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: cube_ambient
+    clip: {fileID: 8300000, guid: 8f3f409cd6bf95348afaf63103f0cf33, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: squid_touch
+    clip: {fileID: 8300000, guid: c07edae8743001d4f938122ff79e87fa, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: door_crumbling
+    clip: {fileID: 8300000, guid: 99476537dfa157144a067bc0621ef47e, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
     source: {fileID: 0}
   badass_activated: 0
   badass_music_on: 0

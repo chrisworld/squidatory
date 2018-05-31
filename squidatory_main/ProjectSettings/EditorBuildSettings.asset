@@ -20,4 +20,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/LukesFolderDontTouch/OuterWorld.unity
     guid: 2021c98ea3c30be4f87439c4073c7bdb
+  - enabled: 1
+    path: Assets/scenes/Maze.unity
+    guid: f70da8a961f0248bf80998c936c4b33c
+  - enabled: 1
+    path: Assets/scenes/Moving Platforms.unity
+    guid: cf7565df2836b4152adcb55af87737f7
+  - enabled: 1
+    path: Assets/scenes/Balance.unity
+    guid: c727ea6ed6c4d4bbbb1f9eb86dd18ebd
+  - enabled: 1
+    path: Assets/scenes/Code.unity
+    guid: 38131288afdcf41bfa8007512a6d5d6d
+  - enabled: 1
+    path: Assets/scenes/Coin Collection.unity
+    guid: 4d03f683764a84492a3ddaa065964384
+  - enabled: 1
+    path: Assets/scenes/Rods.unity
+    guid: d2e5281a5f889490f8cbb9c90480bcf8
+  - enabled: 1
+    path: Assets/scenes/Shimmer.unity
+    guid: d02b8e5d6ee2a4b1eb0d860a11f2e8c9
   m_configObjects: {}

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RodsScript : MonoBehaviour {
 
@@ -35,6 +36,14 @@ public class RodsScript : MonoBehaviour {
 			}
 
 			GameManager.instance_.fLevel ("Rods");
+
+            if (GameManager.instance_.goodKarma_ > GameManager.instance_.badKarma_)
+            {
+                SceneManager.LoadScene("GoodEnding");
+            } else
+            {
+                SceneManager.LoadScene("BadEnding");
+            }
 		}
 	}
 

@@ -7,7 +7,7 @@ public class CharacterControllerJump2D : MonoBehaviour {
 	public float speed = 0.1f;
 	public float jumpHeight = 0.2f;
 
-	private bool isGrounded;
+	private bool isGrounded = true;
 	private Rigidbody player;
 
 	void FixedUpdate () {
@@ -23,7 +23,7 @@ public class CharacterControllerJump2D : MonoBehaviour {
 		}
 	}
 
-	void OnCollisionEnter (Collision c) {
+	void OnCollisionEnter2D (Collision2D c) {
 		if (c.collider.name == "Ground") {
 			isGrounded = true;
 		}

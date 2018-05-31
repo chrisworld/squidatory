@@ -8,7 +8,7 @@ public class AcceptMerchantScript : MonoBehaviour {
 		public void AcceptMerchant () {
 
 		//Get number of coins collected value
-		var CoinCount = GameObject.Find ("ThirdPersonController").GetComponent<CoinCountScript>();
+		var CoinCount = GameObject.Find ("PlayerSprite").GetComponent<CoinCountScript>();
 		var coins = CoinCount.coins;
 
 		//Move buttons A&B off screen (fix for SetActive = false error)

@@ -7,7 +7,6 @@ public class HoldPlayerToPlatformScript : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D col){
 		//Make moving platform parent of game object when game object collides with platform
 		col.transform.parent = gameObject.transform;
-		Debug.Log ("it worked!");
 	}
 
 	void OnTriggerExit2D(Collider2D col){

@@ -9,7 +9,7 @@ public class FarRightButtonScript : MonoBehaviour {
 	public int symbolFR = 0;
 
 	//Trigered when player steps on button
-	void OnTriggerEnter (Collider other){
+	void OnTriggerEnter2D (Collider2D other){
 		 
 		//Change to next symbol
 		if (symbolFR == 4) {

@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game Menu/Scenes/audio.unity
     guid: f62fe64c4d2b32447a9fb0ef3bdca7f3
+  - enabled: 1
+    path: Assets/LukesFolderDontTouch/OuterWorld.unity
+    guid: 2021c98ea3c30be4f87439c4073c7bdb
   m_configObjects: {}

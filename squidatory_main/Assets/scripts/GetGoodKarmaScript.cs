@@ -5,22 +5,34 @@ using UnityEngine.SceneManagement;
 
 public class GetGoodKarmaScript : MonoBehaviour {
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        //Play sound
-        //FindObjectOfType<SoundManager>().Play("nameOfSound");
+    private void OnCollisionEnter2D(Collision2D collision){
 
-        //Add to good karma variable
-        //GameManager.instance_.goodKarma_++;
+            //Play sound
+            //FindObjectOfType<SoundManager>().Play("nameOfSound");
 
-        //Remove bad karma box
-        Destroy(gameObject);
+            //Add to good karma variable
+            //GameManager.instance_.goodKarma_++;
 
-        //Return back to 3D world
-        SceneManager.LoadScene("OuterWorld");
+            //Remove good karma box
+            Destroy(gameObject);
 
-    }
+            //Stop current music
+            try
+            {
+                 FindObjectOfType<SoundManager>().Stop("cube_ambient");
+            }
+            catch
+            {
+                Debug.Log("Cube Amient sound not playing");
+            }
+            //Start Cube theme music
+            FindObjectOfType<SoundManager>().Play("cube_theme");
 
+            //Return back to 3D world
+            SceneManager.LoadScene("OuterWorld");
+
+        }
+  
 	// Use this for initialization
 	void Start () {
 		

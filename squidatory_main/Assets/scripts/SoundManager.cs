@@ -48,15 +48,12 @@ public class SoundManager : MonoBehaviour {
   void Start (){
     //Play("jump"); 
     //Play("walking"); 
-<<<<<<< HEAD
+
     Play("cube_theme"); 
     //Play("cube_ambient"); 
     //Play("squid_theme"); 
     //Play("button"); 
-=======
-    //Play("cube_theme"); 
-    //Play("squid_theme"); 
->>>>>>> 3af36c92130d500e696d94555936a121acd16a93
+
     //Play("button"); 
     badass_activated = false;
     badass_music_on = false;

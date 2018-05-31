@@ -44,12 +44,14 @@ public class RodsScript : MonoBehaviour {
 				pushed++;
 				decision = true;
 				showMenu = false;
+				FindObjectOfType<SoundManager>().Play("squid_scream");
 				Destroy (current_c.gameObject);
 			}
 			else if (GUI.Button (new Rect (90,10,75,50), "Pull")) {
 				pulled++;
 				decision = true;
 				showMenu = false;
+				FindObjectOfType<SoundManager>().Play("squid_happy");
 				Destroy (current_c.gameObject);
 			}
 		}

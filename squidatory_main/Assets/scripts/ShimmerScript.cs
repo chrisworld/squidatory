@@ -21,7 +21,7 @@ public class ShimmerScript : MonoBehaviour {
 
 	void OnGUI () {
 		if (showText) {
-			GUI.Box (new Rect (30, 60, 300, 140), "It's so dark, I can't see. Please help me!");
+			GUI.Box (new Rect (30, 60, 295, 140), "It's so dark, I can't see. Please help me!");
 			if (GUI.Button (new Rect (40, 90, 270, 40), "Give away shimmer")) {
 				showText = false;
 			}

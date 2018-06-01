@@ -9,6 +9,10 @@ public class OuterDoorScript : MonoBehaviour {
     {
         string door = collider.gameObject.name;
 
+        FindObjectOfType<SoundManager>().Stop("cube_theme");
+        FindObjectOfType<SoundManager>().Stop("squid_theme");
+        FindObjectOfType<SoundManager>().Play("cube_ambient");
+
         if (door == "Level1Plane")
         {
             SceneManager.LoadScene("Balance");

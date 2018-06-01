@@ -60,7 +60,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: coin
     clip: {fileID: 8300000, guid: 4c805588974805144b7b637e23971277, type: 3}
-    volume: 0.5
+    volume: 0.25
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -120,7 +120,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: cube_ambient
     clip: {fileID: 8300000, guid: cdc2f2d1b077ca5408df438d682657c6, type: 3}
-    volume: 1
+    volume: 0.5
     pitch: 1
     loop: 1
     source: {fileID: 0}

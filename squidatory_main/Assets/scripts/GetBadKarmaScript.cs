@@ -13,6 +13,7 @@ public class GetBadKarmaScript : MonoBehaviour {
         try
         {
             FindObjectOfType<SoundManager>().Stop("cube_ambient");
+            FindObjectOfType<SoundManager>().Stop("squid_theme");
         }
         catch
         {

@@ -21,7 +21,7 @@ public class GetGoodKarmaScript : MonoBehaviour {
              FindObjectOfType<SoundManager>().Play("white_cube");
 
             //Add to good karma variable
-            //GameManager.instance_.goodKarma_++;
+            GameManager.instance_.goodKarma_++;
 
             //Remove good karma box
             Destroy(gameObject);

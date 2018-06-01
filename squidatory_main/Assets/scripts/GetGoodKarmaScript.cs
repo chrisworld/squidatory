@@ -24,6 +24,9 @@ public class GetGoodKarmaScript : MonoBehaviour {
             //Add to good karma variable
             GameManager.instance_.goodKarma_++;
 
+            //Increase level completed variable
+            
+
             //Remove good karma box
             Destroy(gameObject);
 

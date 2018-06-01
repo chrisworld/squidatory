@@ -36,7 +36,9 @@ public class RodsScript : MonoBehaviour {
 			}
 
 			GameManager.instance_.fLevel ("Rods");
-
+						FindObjectOfType<SoundManager>().Stop("cube_theme");
+						FindObjectOfType<SoundManager>().Stop("cube_ambient");
+            FindObjectOfType<SoundManager>().Play("squid_theme");
             if (GameManager.instance_.goodKarma_ > GameManager.instance_.badKarma_)
             {
                 SceneManager.LoadScene("GoodEnding");

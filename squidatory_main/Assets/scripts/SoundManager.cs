@@ -61,12 +61,13 @@ public class SoundManager : MonoBehaviour {
   	if (badass_activated){
       if (Input.GetKeyDown(KeyCode.M)){
         if (!badass_music_on){
-          Stop("squid_theme");
+          Stop("cube_theme");
+          Stop("cube_ambient");
           Play("badass");
           badass_music_on = true;
         }
         else {
-          Play("squid_theme");
+          Play("cube_theme");
           Stop("badass");
           badass_music_on = false;
         }

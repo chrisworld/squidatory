@@ -60,7 +60,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: coin
     clip: {fileID: 8300000, guid: 4c805588974805144b7b637e23971277, type: 3}
-    volume: 0.5
+    volume: 0.25
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -71,7 +71,7 @@ MonoBehaviour:
     loop: 1
     source: {fileID: 0}
   - name: cube_theme
-    clip: {fileID: 8300000, guid: 11b5493684539264f89e3b396ee2e7a3, type: 3}
+    clip: {fileID: 8300000, guid: 4c8399123c3c6464290d132eba41a291, type: 3}
     volume: 0.5
     pitch: 1
     loop: 1
@@ -119,8 +119,8 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: cube_ambient
-    clip: {fileID: 8300000, guid: 8f3f409cd6bf95348afaf63103f0cf33, type: 3}
-    volume: 1
+    clip: {fileID: 8300000, guid: cdc2f2d1b077ca5408df438d682657c6, type: 3}
+    volume: 0.5
     pitch: 1
     loop: 1
     source: {fileID: 0}

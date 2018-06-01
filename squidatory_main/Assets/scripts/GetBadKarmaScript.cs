@@ -24,11 +24,10 @@ public class GetBadKarmaScript : MonoBehaviour {
         FindObjectOfType<SoundManager>().Play("black_cube");
 
         //Add to bad karma variable
-        //GameManager.instance_.badKarma_++;
+        GameManager.instance_.badKarma_++;
 
         //Remove bad karma box
         Destroy(gameObject);
-
 
         //Start Cube theme music
         FindObjectOfType<SoundManager>().Play("cube_theme");

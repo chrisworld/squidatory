@@ -44,3 +44,5 @@ sysinfo.txt
 *.apk
 *.unitypackage
 squidatory_main/UnityPackageManager/manifest.json
+sound_composing/cb/Audio/trailer.ogg
+sound_composing/cb/Audio/trailer.mp3

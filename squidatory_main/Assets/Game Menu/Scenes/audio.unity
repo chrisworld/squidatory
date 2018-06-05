@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6690,7 +6690,6 @@ GameObject:
   - component: {fileID: 1225389138}
   - component: {fileID: 1225389137}
   - component: {fileID: 1225389136}
-  - component: {fileID: 1225389135}
   m_Layer: 5
   m_Name: btnStop
   m_TagString: Untagged
@@ -6717,20 +6716,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1225389135
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1225389133}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 733d1b6ffe2a8a840a2c144791bd4093, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sounds: []
-  badass_activated: 0
-  badass_music_on: 0
 --- !u!114 &1225389136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6770,7 +6755,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1225389135}
+      - m_Target: {fileID: 1105990613}
         m_MethodName: Stop
         m_Mode: 5
         m_Arguments:

@@ -25,8 +25,8 @@ public class GetGoodKarmaScript : MonoBehaviour {
             GameManager.instance_.goodKarma_++;
 
             //Increase level completed variable
+            GameManager.instance_.fLevel(SceneManager.GetActiveScene().name);
             
-
             //Remove good karma box
             Destroy(gameObject);
 
@@ -34,8 +34,12 @@ public class GetGoodKarmaScript : MonoBehaviour {
             FindObjectOfType<SoundManager>().Play("cube_theme");
 
             //Return back to 3D world
-            SceneManager.LoadScene("OuterWorld");
-
+            if (GameManager.instance_.goodKarma_ + GameManager.instance_.badKarma_ >= 6){
+                SceneManager.LoadScene("OuterWorldRods");
+            }
+            else{
+                SceneManager.LoadScene("OuterWorld");
+            }
         }
   
 	// Use this for initialization

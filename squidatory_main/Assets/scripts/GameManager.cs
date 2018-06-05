@@ -28,7 +28,12 @@ public class GameManager : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		
+		// Load Game Menu
+    if (Input.GetKey("escape") && !SceneManager.GetActiveScene().name.Equals("Squid_Menu")){
+      FindObjectOfType<SoundManager>().Stop("cube_theme");
+      FindObjectOfType<SoundManager>().Play("squid_theme");
+      SceneManager.LoadScene("Squid_Menu");
+    }
 	}
 
 	// add level to finished level list

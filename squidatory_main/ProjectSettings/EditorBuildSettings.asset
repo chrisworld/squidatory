@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Game Menu/Scenes/audio.unity
     guid: f62fe64c4d2b32447a9fb0ef3bdca7f3
   - enabled: 1
-    path: Assets/LukesFolderDontTouch/OuterWorld.unity
+    path: Assets/scenes/OuterWorld.unity
     guid: 2021c98ea3c30be4f87439c4073c7bdb
   - enabled: 1
     path: Assets/scenes/Maze.unity
@@ -41,4 +41,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/scenes/Shimmer.unity
     guid: d02b8e5d6ee2a4b1eb0d860a11f2e8c9
+  - enabled: 1
+    path: Assets/scenes/OuterWorldRods.unity
+    guid: 41659a1e743c50f499f831ca258af9ac
+  - enabled: 1
+    path: Assets/scenes/GoodEnd.unity
+    guid: f13bc4bc251164b05959c0c148c76444
+  - enabled: 1
+    path: Assets/scenes/BadEnd.unity
+    guid: b9cd051b967084a39817007179e231b6
   m_configObjects: {}

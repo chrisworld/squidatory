@@ -36,16 +36,16 @@ public class RodsScript : MonoBehaviour {
 			}
 
 			GameManager.instance_.fLevel ("Rods");
-						FindObjectOfType<SoundManager>().Stop("cube_theme");
-						FindObjectOfType<SoundManager>().Stop("cube_ambient");
-            FindObjectOfType<SoundManager>().Play("squid_theme");
-            if (GameManager.instance_.goodKarma_ > GameManager.instance_.badKarma_)
-            {
-                SceneManager.LoadScene("GoodEnding");
-            } else
-            {
-                SceneManager.LoadScene("BadEnding");
-            }
+			FindObjectOfType<SoundManager>().Stop("cube_theme");
+			FindObjectOfType<SoundManager>().Stop("cube_ambient");
+      FindObjectOfType<SoundManager>().Play("squid_theme");
+      if (GameManager.instance_.goodKarma_ > GameManager.instance_.badKarma_)
+      {
+        SceneManager.LoadScene("GoodEnd");
+      } else
+      {
+        SceneManager.LoadScene("BadEnd");
+      }
 		}
 	}
 
@@ -55,12 +55,14 @@ public class RodsScript : MonoBehaviour {
 				pushed++;
 				decision = true;
 				showMenu = false;
+				FindObjectOfType<SoundManager>().Play("squid_scream");
 				Destroy (current_c.gameObject);
 			}
 			else if (GUI.Button (new Rect (90,10,75,50), "Pull")) {
 				pulled++;
 				decision = true;
 				showMenu = false;
+				FindObjectOfType<SoundManager>().Play("squid_happy");
 				Destroy (current_c.gameObject);
 			}
 		}

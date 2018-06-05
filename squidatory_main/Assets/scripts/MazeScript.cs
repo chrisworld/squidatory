@@ -14,7 +14,7 @@ public class MazeScript : MonoBehaviour {
 		for (int i = 1; i <= completedLvls; i++) {
 			string door = "MazeDoor" + i.ToString ();
 			GameObject obj = GameObject.Find (door);
-			DestroyObject (obj);
+			Destroy(obj);
 		}
 	}
 }

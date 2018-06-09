@@ -17,7 +17,7 @@ public class CoinScript : MonoBehaviour {
 
 	private void OnTriggerEnter2D(Collider2D other){
 		//Trigger when player object collides with coin
-		if (other.name == "PlayerSprite") {
+        if (other.name == "New2DCharictorPrefab") {
 			Destroy (gameObject); //Remove coin game object from scene
 			other.GetComponent<CoinCountScript>().coins++; //Increment coin variable in coin count script
 			FindObjectOfType<SoundManager>().Play("coin");

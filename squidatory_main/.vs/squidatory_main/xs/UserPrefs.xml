@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{7A9B9DAC-B300-6EED-D00D-DA105E1118FB}|">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/DeclineMerchantScript.cs">
+    <Files>
+      <File FileName="Assets/scripts/HoldPlayerToPlatformScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/Standard Assets/2D/Scripts/Platformer2DUserControl.cs" Line="1" Column="1" />
+      <File FileName="Assets/Standard Assets/2D/Scripts/PlatformerCharacter2D.cs" Line="91" Column="14" />
+      <File FileName="Assets/scripts/MiddleLeftButtonScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/MyThirdPersonCharacter.cs" Line="25" Column="19" />
+      <File FileName="Assets/scripts/Character2DAnimateScript.cs" Line="35" Column="1" />
+      <File FileName="Assets/scripts/CoinScript.cs" Line="24" Column="4" />
+      <File FileName="Assets/scripts/AcceptMerchantScript.cs" Line="11" Column="63" />
+      <File FileName="Assets/scripts/DeclineMerchantScript.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

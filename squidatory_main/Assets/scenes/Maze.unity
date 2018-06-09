@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657642, g: 0.49641156, b: 0.5748181, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657665, g: 0.49641156, b: 0.57481825, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -304,7 +304,7 @@ Transform:
   m_LocalScale: {x: 11.286266, y: 11.286262, z: 11.286262}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &215418730 stripped
 Transform:
@@ -366,7 +366,7 @@ Transform:
   - {fileID: 1417585216}
   - {fileID: 455595123}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &248400524
 MonoBehaviour:
@@ -997,7 +997,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 408730, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 149790, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 2}
       propertyPath: m_TagString
@@ -1438,18 +1438,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.27116537, y: -0.32}
+  m_Offset: {x: -0.00047867, y: -0.0044567585}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 1}
-    oldSize: {x: 0.64, y: 0.64}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.35, y: 0.61}
     newSize: {x: 2.56, y: 2.56}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.31908748, y: 0.64}
+  m_Size: {x: 0.35407093, y: 0.6311166}
   m_EdgeRadius: 0
 --- !u!212 &805702556
 SpriteRenderer:
@@ -24103,7 +24103,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4760976357924552, guid: a67cd953b09c347a3bd1b651e180aaeb, type: 2}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a67cd953b09c347a3bd1b651e180aaeb, type: 2}

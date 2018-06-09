@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.38073993, b: 0.35872698, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -177,8 +177,8 @@ BoxCollider2D:
   m_Offset: {x: 0.26134616, y: -0.32}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 1}
-    oldSize: {x: 0.64, y: 0.64}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.35, y: 0.61}
     newSize: {x: 0.64, y: 0.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -532,7 +532,7 @@ Transform:
   m_LocalScale: {x: 1.9340317, y: 1.934032, z: 1.934032}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &735205953
 BoxCollider2D:
@@ -683,7 +683,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4584742382689718, guid: 68e79f4e795d44b839fd0e95024f29b0, type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 68e79f4e795d44b839fd0e95024f29b0, type: 2}
@@ -772,7 +772,7 @@ Transform:
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &852298258 stripped
 GameObject:
@@ -1936,7 +1936,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4760976357924552, guid: a67cd953b09c347a3bd1b651e180aaeb, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a67cd953b09c347a3bd1b651e180aaeb, type: 2}
@@ -2019,7 +2019,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 408730, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 149790, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 2}
       propertyPath: m_TagString
